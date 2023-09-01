@@ -1,0 +1,39 @@
+{
+  "cookies": [
+    {
+      "name": "ARRAffinity",
+      "value": "f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383",
+      "domain": ".bookcart.azurewebsites.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ARRAffinitySameSite",
+      "value": "f4edef8e8ae33d792aa347f6380e743b9805a4dd08725995c30ae1f829052383",
+      "domain": ".bookcart.azurewebsites.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://bookcart.azurewebsites.net",
+      "localStorage": [
+        {
+          "name": "authToken",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvcnRvbmlrYyIsInVzZXJpZCI6IjkwMCIsInVzZXJUeXBlSWQiOiIyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImp0aSI6IjAxNjdlN2JiLTJmZjgtNDE4NS04YmZmLWI5NDQyOWM4NzZiZCIsImV4cCI6MTY5MzM4NDg2NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjQvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjQvIn0.Pl20XK9qzsD1ktVEFF7rgWjcwEj3cFmlOVr77yCKuf0"
+        },
+        {
+          "name": "userId",
+          "value": "900"
+        }
+      ]
+    }
+  ]
+}

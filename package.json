@@ -1,0 +1,31 @@
+{
+  "name": "co-pilot-playwright-demo-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx ts-node src/helper/report/init.ts",
+    "test": "cross-env ENV=prod FORCE_COLOR=0 cucumber-js --config=config/cucumber.js || true",
+    "posttest": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt",
+    "test:production": "cross-env ENV=prod cucumber-js test || true",
+    "test:staging": "cross-env ENV=staging cucumber-js test || true"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber - TS",
+    "playwright-cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.4.0",
+    "@playwright/test": "^1.37.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "ts-node": "^10.9.1",
+    "winston": "^3.10.0"
+  }
+}
